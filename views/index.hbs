@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://kit.fontawesome.com/01ab4199c4.js" crossorigin="anonymous"></script>
+</head>
+<body style="    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6OuhvUj3OJpT0qvmQLXJ4uw6mgddriRwlxw&s');
+    background-size: cover;
+    background-repeat: no-repeat;">
+    {{>header}}
+    <main class="index_main">
+        <div class="maincontent">
+            <p>Welcome to weather app</p>
+            <h1 style="font-size: 2.7em; margin-top: 10px;">Get the Latest <span style="color: rgb(0, 106, 255);"> Weather </span>Info of Your</h1>
+            <h1 style="font-size: 2.7em;"> City</h1>
+            <a href="/weather"><button class="mainbutton" value="redirect">Check Now</button></a>
+        </div>
+        <div class="pic_animation">
+            <img  class="mainimg" src="https://aicontentfy.com/hubfs/Blog/a%20robot%20and%20stack%20of%20papers%20in%20flat%20illustration%20style%20with%20gradients%20and%20white%20background_compressed%203df4d2e6-78a7-47d1-b467-7545e5b830f2.jpg" alt="qabc">
+            <img  class="mainimg" src="https://previews.123rf.com/images/new7ducks/new7ducks1701/new7ducks170100029/68453665-abstract-white-circle-digital-technology-background-futuristic-structure-elements-concept-background.jpg" alt="">
+            <img  class="mainimg" src="https://i.pinimg.com/originals/f7/1a/af/f71aaf6925ab5b8700f9b959cd1e2a23.jpg" alt="">
+            <img  class="mainimg" src="https://previews.123rf.com/images/zven0/zven01603/zven0160300007/54795570-abstract-high-tech-background-in-white-and-gray-tones.jpg" alt="">
+        </div>
+    </main>
+    {{>footer}}
+    <script>
+        var slideIndex = 0;
+        function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mainimg");
+        
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > x.length) {slideIndex = 1}
+        x[slideIndex-1].style.display = "block";
+        setTimeout(carousel, 3000); // Change image every 2 seconds
+        }
+        carousel();
+
+
+    </script>
+</body>
+</html>

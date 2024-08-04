@@ -1,0 +1,232 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.head{
+    height: 10%;
+    background-color: rgb(12, 4, 41);
+    color: rgb(234, 233, 233);
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 110px;
+    padding-right: 120px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.head1{
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+    font-size: 1.2em;
+}
+a:link { 
+    text-decoration: none; 
+  } 
+  a:visited { 
+    text-decoration: none; 
+  } 
+  a:hover { 
+    text-decoration: none; 
+  } 
+  a:active { 
+    text-decoration: none; 
+}
+input{
+    background-color: rgba(240, 248, 255, 0.11);
+    width: 350px;
+    border-radius: 40px;
+    opacity: 0.9;
+    border-color: rgb(128, 216, 238);
+    padding-left: 10px;
+}
+input:focus{
+    border-color: rgba(17, 249, 249, 0.996);
+}
+.head2{
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2em;
+}
+.fa-snowflake{
+    animation: rotates 3s linear infinite;
+    color: rgb(112, 223, 243);
+}
+@keyframes rotates{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+.index_main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.maincontent{
+    display: flex;
+    flex-direction: column;
+}
+.mainimg{
+    width: 500px;
+    height: 400px;
+    border-radius: 20px;
+    margin-left: 40px;
+    animation: movement 4s linear infinite alternate;
+}
+@keyframes movement{
+    from{
+        transform: translateY(0.5em);
+    }
+    to{
+        transform: translateY(-0.5em);
+    }
+}
+.mainbutton{
+    width: 110px;
+    height: 33px;
+    border-radius: 13px;
+    border-color: rgb(204, 202, 202);
+    color: rgb(123, 123, 123);
+    font-weight: bold;
+    box-shadow: 0px 3px 3px rgb(123, 123, 123);
+    margin-top: 40px;
+}
+.mainbutton:hover{
+    box-shadow: 0px 3px 3px rgb(50, 235, 252);
+}
+footer{
+    height: 7%;
+    background-color: rgb(12, 4, 41);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+#weather_search{
+    
+    width: 690px;
+    height: 53px;
+    border-radius: 30px;
+    background-color:  rgb(12, 4, 41) ;
+    border-color: rgb(12, 4, 41); 
+    color: white;
+    padding: 15px;
+}
+.outputfield{
+    width: 400px;
+    height: 350px;
+    overflow: hidden;
+    position: relative;
+    background-color: rgb(45, 28, 106);
+    border-radius: 20px;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    color: azure;
+    /* align-items: center; */
+}
+.weather_main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+}
+#weather_image{
+    animation-name: backgroundchange;
+    animation-duration: 1s;
+    top: 10%;
+    animation-timing-function: linear;
+    width: 100%;
+    height: 90%;
+    position: absolute;
+    opacity: 0.7;
+}
+@keyframes backgroundchange{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 0.7;
+    }
+}
+
+.fieldkeandar{
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    width: 360px;
+    height: 60px;
+    background-color: rgb(12, 4, 41);
+    padding: 4px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+
+    border-color: rgb(252, 252, 253);
+}
+.searchbar_button{
+    width: 110px;
+    height: 45px;
+    background-color: rgb(55, 146, 179);
+    position: absolute;
+    border-radius: 20px;
+    border-color: rgb(55, 146, 179);
+    font-size: 1em;
+    color: white;
+    top: 21.5%;
+    right: 27.8%;
+}
+.fa-cloud{
+    animation: slide 3s linear 1s infinite alternate;
+}
+@keyframes slide {
+    from{
+        transform: scale(1);
+        
+    }
+    to{
+        transform: scale(1.2);
+    }
+}
+.about_main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about_content{
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+}
+.about_image{
+    width: 400px;
+    height: 500px;
+}
+.error_main{
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

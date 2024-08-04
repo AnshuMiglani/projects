@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://kit.fontawesome.com/01ab4199c4.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    {{>header}}
+    <main class="weather_main">
+        <img  id="weather_image"src="https://www.adorama.com/alc/wp-content/uploads/2017/11/shutterstock_114802408-825x465.jpg" alt="">;
+        <div class="searchbar">
+        <input type="text" id="weather_search" placeholder="Enter your city name..">
+        <button id="searchbar_button" class="searchbar_button" >search</button>
+        </div>
+        <div class="outputfield" >
+            <div class="fieldkeandar">
+                <p>{{day}}</p>
+                <p>{{date}}</p>
+            </div >
+            <h1 id="temp_display"style=" color:rgb(150, 150, 151); font-size:  1.6em; margin-left:30px; font-family:'Times New Roman', Times, serif">Get output here</h1>
+            <h1 style="margin-top:70px;" id="tempcode"></h1>
+        </div>
+    </main>
+    {{>footer}}
+    <script src="abc.js">
+    </script>
+</body>
+</html>
