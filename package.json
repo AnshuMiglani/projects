@@ -1,0 +1,17 @@
+{
+  "name": "expressapp",
+  "version": "1.0.0",
+  "description": "express study",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "anshu",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2",
+    "hbs": "^4.2.0",
+    "requests": "^0.3.0"
+  }
+}
