@@ -11,7 +11,7 @@ const aajkidate= datewa.getDate();
 const monthlist= ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
 const currmonth= monthlist[datewa.getMonth()];
 const aajkipuridate= aajkidate+" "+currmonth;
-
+const PORT = process.env.PORT || 8000;
 //api ka kaam
 
 
@@ -39,7 +39,5 @@ app.get("*",(req,res)=>{
     res.render("errorpage");
 });
 
-app.listen(8000,()=>{
-    console.log("Listening to port no 8000");
-});
+app.listen(PORT, () => console.log(`Server running on ${PORT}`));
 
